@@ -18,7 +18,7 @@
 		echo '		<label>'.$data['synopsis'].'</label>';
 		echo '		<label>Release Date : '.$data['release_date'].'</label>';
 		echo '		<div class="button action col-11 edit">Edit</div>';
-		echo '		<a class="col-11 button action delete" onclick="return confirm(are you sure to delete ?)" href="delete.php?id='.$data['id'].'">Delete</a>';
+		echo '		<a class="col-11 button action delete" onclick="return confirm(`are you sure to delete ?`)" href="delete.php?id='.$data['id'].'">Delete</a>';
 		echo '	</div>';
 		echo '	<div class="detail-top">';
 		echo '		<img src="'.$data['cover'].'" alt="Smiley face" class="poster">';
