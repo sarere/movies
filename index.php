@@ -1,6 +1,5 @@
 <?php
 include_once 'connect.php';
-$criteria = '';
 $genre = '';
 if (isset($_GET['search'])) {
     $criteria = $_GET['search'];
@@ -58,7 +57,7 @@ if (isset($_GET['genre'])) {
 				<div class="content col-10">
 					<form action="index.php" method="GET">
 						<div class="search">
-							<input id="search" type="text" placeholder="search by title" name="search" value="<?php echo $criteria;?>">
+							<input id="search" type="text" placeholder="search by title" name="search">
 						</div>
 					</form>
 					<div class="category">
@@ -71,13 +70,7 @@ if (isset($_GET['genre'])) {
 								if ($result = mysqli_query($link, $queryGenre)) {
 									 $data = mysqli_fetch_assoc($result);
 									 echo $data['genre'];
-								} else {
-									if ($criteria == '') {
-										echo 'All Movies';
-									} else {
-										echo $criteria;
-									}
-								} 
+								}
 							?></h1>
 						<?php
 						$result = mysqli_query($link, $query);
