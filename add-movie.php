@@ -104,6 +104,7 @@ if (isset($_POST['submit'])) {
 				</form>
 				<div class="field">
 					<button name="submit" value="submit" form="formtambah" class="button col-12 hd field">Submit</button>
+					<a href="index.php" class="button col-12 submit cam field">Cancel</a>
 				</div>
 			<footer>
 				<span class="logo-small">M</span>ovies - 2017
